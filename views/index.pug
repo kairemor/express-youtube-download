@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div(class="container mx-auto")
+    p Mettre le lien du videos a telecharger
+    form(action="/" method="POST" class="form")
+      label Entrer le lien 
+      input(type="text" name="link" class="form-control")  
+      input(type="submit", value="Telecharger" class="btn btn-success mt-2")
+  footer
+  copyright copyright km &copy 2019 
